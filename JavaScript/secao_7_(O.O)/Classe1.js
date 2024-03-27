@@ -1,0 +1,35 @@
+class lancamento {
+    constructor (nome =  'Generico', valor = 0) {
+        this.nome = nome
+        this.valor = valor
+    }
+}
+
+class ciclo_financeiro {
+    constructor(mes, ano) {
+        this.mes = mes
+        this.ano = ano
+        this.lancamentos = []
+    }
+
+    add_lancamentos(...lancamentos) {
+        lancamentos.forEach(linha => this.lancamentos.push(linha))
+    } 
+
+    sumario() { 
+        let valor_consolidado = 0
+        this.lancamentos.forEach (linha => {
+            valor_consolidado += linha.valor
+        })
+        return valor_consolidado
+    }
+}
+
+const salario = new lancamento('Salario', 45000)
+const conta_de_luz = new lancamento('Luz', -220)
+const agua = new lancamento('agua', -6000)
+
+const contas = new ciclo_financeiro(6, 2018)
+contas.add_lancamentos (salario, conta_de_luz, agua)
+
+console.log(contas.sumario())
