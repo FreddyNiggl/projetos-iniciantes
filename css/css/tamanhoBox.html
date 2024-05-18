@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tamanho Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        div.centro{
+            background-color: aqua;
+            height: 200;
+            width: 100%;
+            padding: 100px;
+            border: solid 20px;
+            display: block;
+            text-align: center;
+            /* box-sizing: border-box; */
+        }
+        div.fundo_cima, div.fundo_baixo{
+            background-color: green;
+            height: 200;
+            width: 100%;
+            padding: 100px;
+            border: solid 20px;
+            display: block;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo_cima">fundo cima</div>
+    <div class="centro">
+        O tamanho do Box é...
+    </div>
+    <div class="fundo_baixo">fundo baixo</div>
+</body>
+</html>

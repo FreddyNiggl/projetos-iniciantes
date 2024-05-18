@@ -1,0 +1,70 @@
+
+*{
+    box-sizing: border-box;
+}
+    
+
+
+body {
+    margin: 0;
+    font-family: 'Oswaldo', sans-serif;
+    background-color: lightgray;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #333;
+    border-bottom: solid 5px #4faddb;
+    height: 80px;
+    box-sizing: content-box;
+    /* text-decoration: none; */
+}
+
+.logo {
+    display: inline-block ;
+    height: 80px;
+    padding: 15px;
+}
+
+
+
+.menu ul {
+    display: flex;
+    list-style-position: none;
+    /* padding: 0px;    */
+    justify-content: flex-start; 
+    /* margin-right: 700px; */
+}
+
+.menu ul li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.menu ul li a {
+    color: white; 
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-style: normal;
+    background-color: black;
+    display: inline-block;
+    width: auto;
+}
+
+.autenticacao {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+.autenticacao a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 10px 12px;
+    background-color: brown;
+    border-radius: 10px;
+}

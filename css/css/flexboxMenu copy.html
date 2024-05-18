@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: gray;
+            font-size: 24px;
+            text-decoration: none;
+            
+        }
+
+        .cabecalho {
+            background-color: black;
+            height: 80px;
+            border-bottom: solid 5px dodgerblue;
+        }
+
+        .logo img {
+            height: 70px;
+        }
+
+        .menu a:hover {
+            background-color: dodgerblue;
+            color: black;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: 700;
+            padding: 15px;
+        }
+        
+        a {
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .autenticacao a {
+            margin: 5px;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+
+        .destaque{
+            background-color: firebrick;
+        }
+
+        /* ==================== */
+        /* Solução com Flex Box */
+        /* ==================== */
+
+        .cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu {
+            flex-grow: 10;
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 10px;
+            padding: 10px;
+
+        }
+
+
+        </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+</body>
+
+</html>

@@ -1,8 +1,20 @@
- 
+const conversao = function(valor) {
+    tipo = typeof(valor)
 
-valor_inverso_ou_nada = function(valor_inseriodo) {
-    resultado = !valor_inseriodo
-    return resultado
+    if (typeof(valor) == "boolean")
+    {
+        return !valor
+    } 
+    else if (typeof(valor) == "number")
+    {
+        return -valor
+    }
+    else
+    {
+        return ("Esperasse um valor numerico ou booleando, mas o tipo é String")
+    }
 }
 
-console.log(valor_inverso_ou_nada(-6))
+dado_passado = "cageuei"
+
+console.log(conversao(dado_passado))
